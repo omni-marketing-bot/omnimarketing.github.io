@@ -6,9 +6,11 @@
   <title>OMNI.Marketing — Автоматизация маркетинга</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <header class="header">
+<header class="header">
+  <div class="container header-flex">
     <img src="assets/logo.png" class="logo" alt="OMNI Marketing">
     <nav>
       <a href="#services">Услуги</a>
@@ -16,100 +18,99 @@
       <a href="#cases">Кейсы</a>
       <a href="#contact">Контакты</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <section class="hero">
+<section class="hero">
+  <div class="container">
     <h1>Автоматизация маркетинга, которая работает сама</h1>
-    <p>Внедряем CRM, автоворонки и аналитику, чтобы вы получали заявки 24/7.</p>
+    <p class="subtitle">Внедряем CRM, строим автоворонки, запускаем аналитику. Увеличиваем продажи без хаоса.</p>
     <div class="buttons">
-      <a class="btn" href="#contact">Заказать аудит</a>
-      <a class="btn" href="#contact">Написать нам</a>
+      <a class="btn primary" href="#contact">Получить аудит</a>
+      <a class="btn secondary" href="#contact">Связаться</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="services" class="block">
+<section id="services" class="block">
+  <div class="container">
     <h2>Наши услуги</h2>
     <div class="cards">
       <div class="card">
         <h3>Аудит воронки</h3>
-        <p>Экспресс-анализ конверсий, воронок и точек потерь.</p>
+        <p>Находим точки роста, увеличиваем конверсии.</p>
       </div>
       <div class="card">
         <h3>Настройка CRM</h3>
-        <p>Структурируем вашу базу, этапы и сценарии.</p>
+        <p>Структура этапов, воронка продаж, автоматизация.</p>
       </div>
       <div class="card">
-        <h3>Автоматизация</h3>
-        <p>Письма, мессенджеры, напоминания, дожим-цепочки.</p>
+        <h3>Автоворонки</h3>
+        <p>Письма, боты, дожим-цепочки, автоматизация продаж.</p>
       </div>
       <div class="card">
-        <h3>Аналитика и отчёты</h3>
-        <p>Подключаем и настраиваем сквозную аналитику.</p>
+        <h3>Сквозная аналитика</h3>
+        <p>Подключение данных, дашборды, отчёты.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="process" class="block">
+<section id="process" class="block light">
+  <div class="container">
     <h2>Как мы работаем</h2>
-    <ol>
-      <li>Проведение бесплатного аудита</li>
-      <li>Совместное планирование решения</li>
+    <ol class="process-list">
+      <li>Бесплатный аудит</li>
+      <li>Планирование решения</li>
       <li>Внедрение системы</li>
-      <li>Запуск, тестирование и сопровождение</li>
+      <li>Запуск и сопровождение</li>
     </ol>
-  </section>
+  </div>
+</section>
 
-  <section id="cases" class="block">
+<section id="cases" class="block">
+  <div class="container">
     <h2>Кейсы</h2>
-    <div class="card">
-      <h3>Пример: Онлайн-школа</h3>
-      <p>До: заявки терялись, менеджеры отвечали долго. После: внедрили автоворонку + CRM → время ответа < 5 мин, конверсия выросла на 25 %</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Онлайн-школа</h3>
+        <p>Время ответа сократили до 5 минут → рост конверсии на 25%.</p>
+      </div>
+      <div class="card">
+        <h3>Магазин услуг</h3>
+        <p>CRM + уведомления → +15% закрытий и экономия 10 часов в неделю.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Пример: Магазин услуг</h3>
-      <p>До: ручная обработка заявок, нет системного подхода. После: CRM + автоматические уведомления → +15% закрытий, экономия 10 ч/недель.</p>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contact" class="block">
+<section id="contact" class="block light">
+  <div class="container">
     <h2>Оставьте заявку</h2>
-    <form action="https://submify.vercel.app/ВАШ_ЕМАИЛ@PROTON.ME" method="POST" class="form">
-      <label>
-        Ваше имя:<br>
+
+    <form action="https://submify.vercel.app/YOUR_EMAIL" method="POST" class="form">
+      <label>Имя
         <input type="text" name="name" required>
-      </label><br><br>
-      <label>
-        Email:<br>
+      </label>
+
+      <label>Email
         <input type="email" name="email" required>
-      </label><br><br>
-      <label>
-        Комментарий / задача:<br>
+      </label>
+
+      <label>Сообщение
         <textarea name="message" rows="4"></textarea>
-      </label><br><br>
-      <button type="submit" class="btn">Отправить заявку</button>
+      </label>
+
+      <button type="submit" class="btn primary full">Отправить</button>
     </form>
-    <p class="note">После отправки мы свяжемся с вами в течение 24 часов и сделаем бесплатный аудит.</p>
-  </section>
+  </div>
+</section>
 
-  <section id="faq" class="block">
-    <h2>Вопросы и ответы</h2>
-    <div class="card">
-      <strong>Сколько стоит запуск автоматизации?</strong>
-      <p>Цена зависит от задачи — мы делаем бесплатный аудит и даем бюджет. Часто старт ниже 20 000 ₽.</p>
-    </div>
-    <div class="card">
-      <strong>Нужно ли использовать CRM?</strong>
-      <p>Да, CRM позволяет систематизировать лиды и управлять воронкой, но мы можем подключить бесплатные и платные решения.</p>
-    </div>
-    <div class="card">
-      <strong>Будет ли обучение после внедрения?</strong>
-      <p>Да, мы обучаем вашу команду, настраиваем отчёты и даём понятные шаблоны.</p>
-    </div>
-  </section>
-
-  <footer class="footer">
+<footer class="footer">
+  <div class="container">
     <p>© 2025 OMNI.Marketing — маркетинг-автоматизация</p>
-  </footer>
+  </div>
+</footer>
 
 </body>
 </html>
