@@ -3,194 +3,209 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Omni.Маркетинг — Автоматизируем успех!</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <title>ОМНИ.Маркетинг — Автоматизация маркетинга и CRM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-
     body {
       margin: 0;
-      background: #ffffff;
       font-family: "Inter", sans-serif;
-      color: #0c0c0c;
+      background: #ffffff;
+      color: #111111;
       line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
     }
 
     header {
-      padding: 32px;
+      max-width: 1200px;
+      margin: auto;
+      padding: 32px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 1200px;
-      margin: auto;
     }
 
     header img {
-      height: 34px;
+      height: 40px;
     }
 
+    /* HERO */
     .hero {
-      text-align: center;
-      padding: 90px 20px 120px;
-      max-width: 900px;
+      text-align: left;
+      max-width: 1100px;
+      padding: 80px 20px 100px;
       margin: auto;
     }
 
     .hero h1 {
-      font-size: 48px;
+      font-size: 52px;
       font-weight: 600;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
 
     .hero p {
-      font-size: 20px;
-      opacity: 0.6;
-      margin-bottom: 40px;
+      max-width: 640px;
+      font-size: 22px;
+      opacity: .7;
+      margin-bottom: 36px;
     }
 
-    .cta-btn {
-      background: #0a84ff;
-      padding: 16px 32px;
-      color: #fff;
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .btn {
+      padding: 14px 28px;
       border-radius: 12px;
       text-decoration: none;
-      font-size: 18px;
-      display: inline-block;
-      transition: 0.25s;
+      font-size: 17px;
+      font-weight: 500;
+      color: #fff;
+      background: #0a84ff;
+      transition: .2s;
     }
 
-    .cta-btn:hover {
+    .btn:hover {
       background: #006de4;
     }
 
+    /* Sections */
     .section {
-      padding: 80px 20px;
       max-width: 1100px;
+      padding: 80px 20px;
       margin: auto;
     }
 
     h2 {
-      font-size: 32px;
-      margin-bottom: 32px;
+      font-size: 34px;
       font-weight: 600;
+      margin-bottom: 32px;
     }
 
-    .cases {
+    .grid {
       display: grid;
-      gap: 32px;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
     }
 
-    .case {
+    .card {
       background: #f5f5f7;
       padding: 28px;
       border-radius: 18px;
       transition: .25s;
     }
 
-    .case:hover {
-      background: #ececec;
+    .card:hover {
+      background: #ededed;
+    }
+
+    .case-title {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .case-block {
+      background: #fff;
+      padding: 14px 18px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #e5e5e5;
     }
 
     footer {
-      padding: 40px;
       text-align: center;
-      opacity: 0.6;
+      padding: 40px;
+      opacity: .6;
       margin-top: 40px;
     }
-
-    .vk-btn {
-      margin-top: 20px;
-      display: inline-block;
-      text-decoration: none;
-      padding: 14px 26px;
-      background: #0077ff;
-      color: white;
-      border-radius: 12px;
-      font-size: 17px;
-    }
-
   </style>
 </head>
 
 <body>
 
 <header>
-  <img src="logo.svg" alt="OmniFlow Logo">
+  <img src="logo.svg" alt="ОМНИ.Маркетинг">
 </header>
 
 <section class="hero">
-  <h1>Маркетинг, автоматизация и рост продаж</h1>
-  <p>Помогаю бизнесам выстраивать воронки, CRM, аналитику и систему роста — без хаоса и лишних затрат.</p>
-  <a href="https://vk.com" class="cta-btn">Связаться</a>
+  <h1>ОМНИ.Маркетинг</h1>
+  <p>Настраиваю маркетинг, CRM и автоматизацию для роста продаж. Спокойно, без хаоса, системно.</p>
+
+  <div class="btn-row">
+    <a class="btn" href="#">WhatsApp</a>
+    <a class="btn" href="#">E-mail</a>
+    <a class="btn" href="https://vk.com/">VK</a>
+    <a class="btn" href="#">Telegram</a>
+  </div>
 </section>
 
 <section class="section">
   <h2>Что я делаю</h2>
 
-  <div class="cases">
+  <div class="grid">
 
-    <div class="case">
-      <strong>Аудит CRM и воронки</strong>
-      <p>Разбор текущей структуры, выявление узких мест, создание карты точки роста.</p>
+    <div class="card">
+      <div class="case-title">Аудит CRM и воронки</div>
+      <p>Выявление узких мест, ошибки в этапах, дубли, пропуски лидов.</p>
     </div>
 
-    <div class="case">
-      <strong>Настройка рекламы</strong>
-      <p>Яндекс, VK, Dzen. Фокус на офлайне, конверсиях и окупаемости.</p>
+    <div class="card">
+      <div class="case-title">Настройка рекламы</div>
+      <p>Яндекс, VK, Дзен. Стратегия, гипотезы, оптимизация РК.</p>
     </div>
 
-    <div class="case">
-      <strong>Создание автоворонок</strong>
-      <p>Email-процессы, триггеры, сегментация, автоматизация на уровне агентства.</p>
+    <div class="card">
+      <div class="case-title">Автоматизация</div>
+      <p>Триггеры, автоворонки, сегменты, интеграции.</p>
     </div>
 
-    <div class="case">
-      <strong>Аналитика</strong>
-      <p>Сквозные отчеты, дашборды, KPI-модели.</p>
+    <div class="card">
+      <div class="case-title">Аналитика</div>
+      <p>Сквозная аналитика, отчёты, дашборды, KPI-модели.</p>
     </div>
 
   </div>
 </section>
 
 <section class="section">
-  <h2>Мои кейсы</h2>
+  <h2>Кейсы</h2>
 
-  <div class="cases">
+  <div class="grid">
 
-    <div class="case">
-      <strong>+38% заявок через CRM</strong>
-      <p>Оптимизация этапов, интеграции, автописем и ретаргета.</p>
+    <div class="card">
+      <div class="case-title">Кейс 1 · CRM + Ретеншн</div>
+      <div class="case-block"><strong>Было:</strong> лиды не доходят до финальных этапов, много потерь.</div>
+      <div class="case-block"><strong>Сделали:</strong> привели этапы в порядок, ввели автозадачи, внедрили триггеры.</div>
+      <div class="case-block"><strong>Стало:</strong> +38% доведённых до сделки.</div>
     </div>
 
-    <div class="case">
-      <strong>–24% стоимость заявки в Яндексе</strong>
-      <p>Новая структура, минуса, UTM-модель, корректировки.</p>
+    <div class="card">
+      <div class="case-title">Кейс 2 · Яндекс Реклама</div>
+      <div class="case-block"><strong>Было:</strong> дорогие лиды, неструктурированная реклама.</div>
+      <div class="case-block"><strong>Сделали:</strong> перестроили кампании, минус-слова, сегментация.</div>
+      <div class="case-block"><strong>Стало:</strong> -24% стоимость заявки.</div>
     </div>
 
-    <div class="case">
-      <strong>+52% повторных продаж</strong>
-      <p>Email-сегментация и персонализированные сценарии.</p>
+    <div class="card">
+      <div class="case-title">Кейс 3 · Email маркетинг</div>
+      <div class="case-block"><strong>Было:</strong> базу не обрабатывали.</div>
+      <div class="case-block"><strong>Сделали:</strong> сегменты, триггеры брошенных этапов.</div>
+      <div class="case-block"><strong>Стало:</strong> +52% повторных продаж.</div>
     </div>
 
-    <div class="case">
-      <strong>Внедрение сквозной аналитики</strong>
-      <p>Полная система: CRM → реклама → отчёты → решения.</p>
-    </div>
-
-    <div class="case">
-      <strong>Рост выручки на 30%</strong>
-      <p>3 месяца оптимизации маркетинга и автоматизации.</p>
+    <div class="card">
+      <div class="case-title">Кейс 4 · Сквозная аналитика</div>
+      <div class="case-block"><strong>Было:</strong> данные в Excel, невозможно анализировать.</div>
+      <div class="case-block"><strong>Сделали:</strong> единый дашборд со всеми каналами.</div>
+      <div class="case-block"><strong>Стало:</strong> управляемая аналитика.</div>
     </div>
 
   </div>
 </section>
 
 <footer>
-  OmniFlow · Маркетинг и автоматизация · © 2025  
-  <br><br>
-  <a href="https://vk.com" class="vk-btn">Мой VK</a>
+  ОМНИ.Маркетинг · Автоматизация маркетинга и CRM · © 2025  
 </footer>
 
 </body>
