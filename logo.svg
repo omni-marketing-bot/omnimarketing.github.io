@@ -1,21 +1,29 @@
-<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="256" cy="256" r="210" fill="none" stroke="#003A5D" stroke-width="32"/>
-  
-  <!-- Bars -->
-  <rect x="150" y="280" width="50" height="140" rx="8" fill="#003A5D"/>
-  <rect x="225" y="240" width="50" height="180" rx="8" fill="#003A5D"/>
-  <rect x="300" y="200" width="50" height="220" rx="8" fill="#003A5D"/>
-  <rect x="375" y="160" width="50" height="260" rx="8" fill="#003A5D"/>
+<svg width="512" height="580" viewBox="0 0 512 580" xmlns="http://www.w3.org/2000/svg">
+  <!-- КРУГ -->
+  <circle cx="256" cy="256" r="205" fill="none" stroke="#003A5D" stroke-width="24"/>
 
-  <!-- Light overlays -->
-  <path d="M150 350 L200 320 L200 420 L150 420 Z" fill="#00AFCB" opacity="0.85"/>
-  <path d="M225 300 L275 260 L275 420 L225 420 Z" fill="#00AFCB" opacity="0.85"/>
-  <path d="M300 260 L350 210 L350 420 L300 420 Z" fill="#00AFCB" opacity="0.85"/>
-  <path d="M375 220 L425 170 L425 420 L375 420 Z" fill="#00AFCB" opacity="0.85"/>
+  <!-- ДИАГРАММА -->
+  <g transform="translate(146, 146)">
+    <!-- Тёмные столбцы (база) -->
+    <rect x="0"   y="120" width="40" height="120" rx="8" fill="#003A5D"/>
+    <rect x="60"  y="80"  width="40" height="160" rx="8" fill="#003A5D"/>
+    <rect x="120" y="40"  width="40" height="200" rx="8" fill="#003A5D"/>
+    <rect x="180" y="0"   width="40" height="240" rx="8" fill="#003A5D"/>
 
-  <!-- Text -->
-  <text x="256" y="490" text-anchor="middle" font-family="Inter, sans-serif"
-        font-size="72" font-weight="600" fill="#003A5D">
+    <!-- Светлые части — строго внутри каждого столбца -->
+    <!-- BAR 1 -->
+    <path d="M0 150 L40 130 L40 240 L0 240 Z" fill="#00AFCB" opacity="0.9"/>
+    <!-- BAR 2 -->
+    <path d="M60 110 L100 90 L100 240 L60 240 Z" fill="#00AFCB" opacity="0.9"/>
+    <!-- BAR 3 -->
+    <path d="M120 70 L160 50 L160 240 L120 240 Z" fill="#00AFCB" opacity="0.9"/>
+    <!-- BAR 4 -->
+    <path d="M180 30 L220 10 L220 240 L180 240 Z" fill="#00AFCB" opacity="0.9"/>
+  </g>
+
+  <!-- НАЗВАНИЕ — ниже круга и по его ширине -->
+  <text x="256" y="555" text-anchor="middle"
+        font-family="Inter" font-size="48" font-weight="600" fill="#003A5D">
     OMNI<tspan fill="#00AFCB">.Marketing</tspan>
   </text>
 </svg>
